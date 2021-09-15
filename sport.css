@@ -1,0 +1,83 @@
+.container,
+.container1 {
+  display: flex;
+  justify-content: space-around;
+  border: 1px solid black;
+  width: 500px;
+  margin-left: 30%;
+  background-color: #effbfb;
+}
+
+.todo2 {
+  border-bottom: lightsalmon;
+  border-left: lightsalmon;
+}
+
+#todo,
+#todo1 {
+  align-content: space-around;
+}
+
+.input,
+.input1,
+.total,
+.total1 {
+  margin-bottom: 10px;
+}
+#input1 {
+  height: 25px;
+  padding-top: 4px;
+  border-radius: 10px;
+  border-color: #2e9afe;
+}
+
+.li {
+  border: 1px solid;
+  text-align: justify;
+  height: 30px;
+  padding-top: 4px;
+  border-radius: 10px;
+  border-color: #088a08;
+  margin-right: 30px;
+}
+
+.li-active {
+  color: #fa5858;
+}
+
+.li-active .btn2 {
+  color: #fa5858;
+}
+
+ul {
+  list-style-type: none;
+}
+
+#btn1 {
+  background-color: #f7fe2e;
+  color: #2e9afe;
+  border: #0000ff;
+  transition: 1s;
+  border-radius: 10px;
+}
+
+.btn2 {
+  background-image: url(img/trash.svg);
+  font-display: #df0101;
+  border: #df0101;
+  color: #ad5555;
+  float: right;
+  position: static;
+}
+
+.todo2 h4 {
+  margin-inline-end: 10px;
+  font-family: "Times New Roman", Times, serif; /* Шрифт с засечками */
+  font-style: italic; /* Курсивное начертание */
+  color: #088a08;
+}
+#todo1 h4 {
+  font-family: "Times New Roman", Times, serif; /* Шрифт с засечками */
+  font-style: italic; /* Курсивное начертание */
+  color: #2e9afe;
+}
