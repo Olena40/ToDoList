@@ -1,5 +1,4 @@
-.container,
-.container1 {
+.container {
   display: flex;
   justify-content: space-around;
   border: 1px solid black;
@@ -8,23 +7,25 @@
   background-color: #effbfb;
 }
 
-.todo2 {
+.btn1 {
+  border: 1px solid;
+}
+
+.todo1 {
   border-bottom: lightsalmon;
   border-left: lightsalmon;
 }
 
-#todo,
-#todo1 {
+#todo {
   align-content: space-around;
 }
 
 .input,
-.input1,
-.total,
-.total1 {
+.total {
   margin-bottom: 10px;
 }
-#input1 {
+
+#input {
   height: 25px;
   padding-top: 4px;
   border-radius: 10px;
@@ -45,7 +46,7 @@
   color: #fa5858;
 }
 
-.li-active .btn2 {
+.li-active .btn1 {
   color: #fa5858;
 }
 
@@ -53,7 +54,7 @@ ul {
   list-style-type: none;
 }
 
-#btn1 {
+#btn {
   background-color: #f7fe2e;
   color: #2e9afe;
   border: #0000ff;
@@ -61,7 +62,7 @@ ul {
   border-radius: 10px;
 }
 
-.btn2 {
+.btn1 {
   background-image: url(img/trash.svg);
   font-display: #df0101;
   border: #df0101;
@@ -70,14 +71,15 @@ ul {
   position: static;
 }
 
-.todo2 h4 {
+.todo1 h4 {
   margin-inline-end: 10px;
-  font-family: "Times New Roman", Times, serif; /* Шрифт с засечками */
-  font-style: italic; /* Курсивное начертание */
+  font-family: "Times New Roman", Times, serif; /* Ð¨Ñ€Ð¸Ñ„Ñ‚ Ñ Ð·Ð°ÑÐµÑ‡ÐºÐ°Ð¼Ð¸ */
+  font-style: italic; /* ÐšÑƒÑ€ÑÐ¸Ð²Ð½Ð¾Ðµ Ð½Ð°Ñ‡ÐµÑ€Ñ‚Ð°Ð½Ð¸Ðµ */
   color: #088a08;
 }
-#todo1 h4 {
-  font-family: "Times New Roman", Times, serif; /* Шрифт с засечками */
-  font-style: italic; /* Курсивное начертание */
+
+#todo h4 {
+  font-family: "Times New Roman", Times, serif; /* Ð¨Ñ€Ð¸Ñ„Ñ‚ Ñ Ð·Ð°ÑÐµÑ‡ÐºÐ°Ð¼Ð¸ */
+  font-style: italic; /* ÐšÑƒÑ€ÑÐ¸Ð²Ð½Ð¾Ðµ Ð½Ð°Ñ‡ÐµÑ€Ñ‚Ð°Ð½Ð¸Ðµ */
   color: #2e9afe;
 }

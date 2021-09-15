@@ -1,72 +1,47 @@
-
-
-//------------------------------------------------------------
-
-const input1 = document.querySelector("#input1");
-const btn1 = document.querySelector("#btn1");
-const result1 = document.querySelector("#result1");
-const total1 = document.querySelector("#total1");
-
-
-let i=0
-
-//add event to button
-
-btn.addEventListener("click", (e) => {
-  result.innerHTML += `<ul>${input.value}<button><img src='trash.svg' width='20' height='20'></button></ul>`;
-  input.value = "";
-  e.preventDefault();
-});
-
+const input = document.querySelector('#input');
+const btn = document.querySelector('#btn');
+const result = document.querySelector('#result');
+const total = document.querySelector('#total');
+let i=0 ;       //task counter
 
 //create and delete todo
 
-btn1.addEventListener("click", (e) => {
-  if (input1.value === '') return  //remove the empty line
-  createDeleteElements(input1.value)
-    input1.value = "";
-
-  });
-
+btn.addEventListener('click', (e) => {
+    if (input.value === '') return          //remove the empty line
+    createDeleteElements(input.value)
+    input.value = ''  
+})
 
 function createDeleteElements(value) {
-i++
-    const li= document.createElement('li') // create li
-    li.className = 'li'
-    li.innerText= value
+ i++  //task counter
 
-    const btn2= document.createElement('button') // create button del
-    btn2.className = 'btn2'
-    btn2.innerHTML= "<img src='trash.svg' width='20' height='20'>"
+const li = document.createElement('li')     // create li
+li.className = 'li'
+li.innerText = value
 
-   
+const btn1 = document.createElement('button')      // create button del
+btn1.className = 'btn1'
+btn1.innerText = 'del'
+li.appendChild(btn1)
 
+//// remove todo
 
-li.appendChild(btn2)
+btn1.addEventListener('click', (e) => {     // create an event for the button 
+    result.removeChild(li)                     // so that when clicked, the line is deleted
 
-// remove todo
+    i--                     //task counter
+    total.innerText = i
+    
+})
 
-btn2.addEventListener("click", (e) => { // create an event for the button 
-                                        // so that when clicked, the line is deleted
-    result1.removeChild(li)
-    i--
-    total1.innerText = i
-     })
+//toggle class active
 
-// toggle class active
-
-    li.addEventListener("click", (e) => { 
+li.addEventListener('click', (e) => {
     li.classList.toggle('li-active')
 })
 
-total1.innerText = i
+total.innerTex =i   //task counter
 
-    result1.appendChild(li)
+result.appendChild(li)
+
 }
-
-
-
-  
-
-
-
