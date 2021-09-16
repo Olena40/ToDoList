@@ -19,6 +19,11 @@ const checkTask = (event) => {
 	event.parentElement.style.backgroundColor = "green";
 };
 
+const editTask = (event) => {
+	const inputField = document.querySelector("#myInput");
+	event.parentElement.firstChild.nextSibling.innerHTML = inputField.value;
+};
+
 const deleteTask = (event) => {
 	event.parentElement.remove();
 };
