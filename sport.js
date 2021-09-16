@@ -15,7 +15,7 @@ btn.addEventListener('click', (e) => {
 function createDeleteElements(value) {
  i++  //task counter
 
-const li = document.createElement('li')     // create li
+let li = document.createElement('li')     // create li
 li.className = 'li'
 li.innerText = value
 

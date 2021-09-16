@@ -1,10 +1,17 @@
+.main {
+  display: flex;
+  justify-content: center;
+}
+
 .container {
   display: flex;
   justify-content: space-around;
   border: 1px solid black;
-  width: 500px;
-  margin-left: 30%;
+  min-width: 600px;
+  margin-left: 10%;
+
   background-color: #effbfb;
+  min-height: 80vh;
 }
 
 .btn1 {
@@ -14,10 +21,15 @@
 .todo1 {
   border-bottom: lightsalmon;
   border-left: lightsalmon;
+  margin-top: 8px;
 }
 
-#todo {
+.todo {
   align-content: space-around;
+}
+#todo3 {
+  display: block;
+  flex-direction: column;
 }
 
 .input,
@@ -72,14 +84,16 @@ ul {
 }
 
 .todo1 h4 {
-  margin-inline-end: 10px;
-  font-family: "Times New Roman", Times, serif; /* Ð¨Ñ€Ð¸Ñ„Ñ‚ Ñ Ð·Ð°ÑÐµÑ‡ÐºÐ°Ð¼Ð¸ */
-  font-style: italic; /* ÐšÑƒÑ€ÑÐ¸Ð²Ð½Ð¾Ðµ Ð½Ð°Ñ‡ÐµÑ€Ñ‚Ð°Ð½Ð¸Ðµ */
+  font-family: "Times New Roman", Times, serif;
+  font-style: italic;
   color: #088a08;
 }
 
-#todo h4 {
-  font-family: "Times New Roman", Times, serif; /* Ð¨Ñ€Ð¸Ñ„Ñ‚ Ñ Ð·Ð°ÑÐµÑ‡ÐºÐ°Ð¼Ð¸ */
-  font-style: italic; /* ÐšÑƒÑ€ÑÐ¸Ð²Ð½Ð¾Ðµ Ð½Ð°Ñ‡ÐµÑ€Ñ‚Ð°Ð½Ð¸Ðµ */
+.todo h4 {
+  font-family: "Times New Roman", Times, serif;
+  font-style: italic;
   color: #2e9afe;
+}
+#todo1 {
+  font-size: 24px;
 }
