@@ -1,113 +1,111 @@
 @import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap");
 
-
 body {
-	margin: 0;
-	min-width: 250px;
-	/*background-image: linear-gradient(
+  margin: 0;
+  min-width: 250px;
+  /*background-image: linear-gradient(
 		120deg,
 		rgba(214, 214, 214, 0),
 		rgb(184, 214, 129)
 	);*/
-	background-image: linear-gradient(180deg, #d4d0c2, #74483c);
-  	color: white;
- 	font-family: "Lobster", sans-serif;
-	color: rgb(7, 7, 7);
-	min-height: 100vh;
+  background-image: linear-gradient(180deg, #f3efdf, #cec8c6);
+  color: white;
+  font-family: "Lobster", sans-serif;
+  color: rgb(7, 7, 7);
+  min-height: 100vh;
 }
 
 * {
-	box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 /* Remove margins and padding from the list */
 ul {
-	margin: 0;
-	padding: 0;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
 
 /* Style the list items */
 ul li {
-	cursor: pointer;
-	position: relative;
-	padding: 0px 0px 0px 20px;
-	list-style-type: circle;
-	background: #eee;
-	font-size: 16px;
-	transition: 0.2s;
-	font-family: "Lobster";
+  cursor: pointer;
+  position: relative;
+  padding: 0px 0px 0px 20px;
+  list-style-type: circle;
+  background: #eee;
+  font-size: 16px;
+  transition: 0.2s;
+  font-family: "Lobster";
+  list-style-type: none;
 
-	/* make the list items unselectable */
-	-webkit-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
-	user-select: none;
+  /* make the list items unselectable */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 /* Set all odd list items to a different color (zebra-stripes) */
 ul li:nth-child(odd) {
-	background: #f9f9f9;
-	list-style-type: circle;
+  background: #f9f9f9;
+  list-style-type: circle;
+  list-style-type: none;
 }
 
 /* Darker background-color on hover */
 ul li:hover {
-	background: #ddd;
+  background: #ddd;
+  list-style-type: none;
 }
 
 /* When clicked on, add a background color and strike out text */
 
-
 /* Style the header */
 .header {
-	background-image: linear-gradient(180deg, #d4d0c2, #74483c);
-	padding: 30px 40px;
-	color: white;
-	text-align: center;
-	font-family: "lobster";
-	font-size: 1.5em;
+  background-image: linear-gradient(180deg, #d4d0c2, #74483c);
+  padding: 30px 40px;
+  color: white;
+  text-align: center;
+  font-family: "lobster";
+  font-size: 1.5em;
 }
 
 /* Clear floats after the header */
 .header:after {
-	content: "";
-	display: table;
-	clear: both;
+  content: "";
+  display: table;
+  clear: both;
 }
 
 /* Style the input */
 input {
-	margin: 20px 0px;
-	border: none;
-	border-radius: 0;
-	width: 75%;
-	padding: 10px;
-	float: left;
-	font-size: 16px;
+  margin: 20px 0px;
+  border: none;
+  border-radius: 0;
+  width: 75%;
+  padding: 10px;
+  float: left;
+  font-size: 16px;
 }
 
 /* Style the "Add" button */
 .addBtn {
-
-	margin: 9px 0px;
-	padding: 10px 0px;
-	width: 10%;
-	background: #d9d9d9;
-	color: #555;
-	float: left;
-	cursor: pointer;
-	transition: 0.3s;
+  margin: 9px 0px;
+  padding: 10px 0px;
+  width: 10%;
+  background: #d9d9d9;
+  color: #555;
+  float: left;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
 .addBtn:hover {
-	background-color: rgb(199, 234, 0);
+  background-color: rgb(199, 234, 0);
 }
-
 
 .to-do-btn {
-	float: right;
-	margin-right: 5px;
+  float: right;
+  margin-right: 5px;
 }
-
-
